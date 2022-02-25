@@ -40,12 +40,12 @@ let curriculum_component = {
 const router = new VueRouter({
     routes: [
         {
-            path: '/',
+            path: '/admin-libros',
             name: 'home_component',
             component: home_component
         },
         {
-            path: '/admin-autores',
+            path: '/',
             name: 'autores_component',
             component: autores_component
         },
@@ -89,20 +89,20 @@ const app = new Vue({
         itemsBar: [
      
             {
-                icon: "mdi-book-open-page-variant",
-                text: "Gestión de obras literarias",
-                ruta: "/",
-            },
-            {
                 icon: "mdi-feather",
                 text: "Gestión de autores",
-                ruta: "/admin-autores",
+                ruta: "/",
             },
             {
                 icon: "mdi-book-open",
                 text: "Gestión de editoriales",
                 ruta: "/admin-editoriales",
-            }
+            },
+            {
+                icon: "mdi-book-open-page-variant",
+                text: "Gestión de obras literarias",
+                ruta: "/admin-libros",
+            },
             /* color: '#c12120' */
         ],
     }),

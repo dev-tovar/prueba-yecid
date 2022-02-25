@@ -1,8 +1,8 @@
 <v-navigation-drawer
 app
 width="350"
-:mini-variant.sync="drawer"
-permanent
+v-model="drawer"
+
 >
 
 <template v-slot:prepend>

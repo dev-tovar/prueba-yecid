@@ -20,9 +20,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('modulos.home');
 });
-Route::get('/admin-autores', function () {
+Route::get('/admin-libros', function () {
     return view('modulos.home');
 });
+
 Route::get('/admin-editoriales', function () {
     return view('modulos.home');
 });
